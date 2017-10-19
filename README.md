@@ -24,3 +24,6 @@ Juan Millan, Encargado de desarrollo industrial, +56982337616 , jjmillancas@gmai
 Pablo Loza, Equipo de diseño, +56977992752, loza15_uc@live.com
 
 Nicolás Sepúlveda, Director de ciencias, +56965991401, nicolas.sepulveda.1@ug.uchile.cl
+
+Ignacio Bugueño, Encargado de pruebas de software, +56995532552, ignacio.bugueno@live.com
+
