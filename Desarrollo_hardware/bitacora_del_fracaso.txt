@@ -15,3 +15,17 @@ hasta aca funciona el ESP con esta libreria, ahora pasamos a la parte del server
 ================= RPI
 La raspberry pi utilizada en este documento es una PI 3. La estoy usando con SERIAL y putty... dudo mucho que eso haga una diferencia a usarla con hdmi y teclado.
 Asumo que Debian esta instalado.
+-intento 1:
+http://www.instructables.com/id/Installing-MQTT-BrokerMosquitto-on-Raspberry-Pi/
+sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+network={
+        ssid="fcfm-invitado"
+        psk="wifi-FCFM-uchile"
+        key_mgmt=WPA-PSK
+}
+....
+sudo apt-get update
+sudo apt-get install mosquitto
+http://www.instructables.com/id/Installing-MQTT-BrokerMosquitto-on-Raspberry-Pi/
+sudo apt-get install mosquitto-clients
+-> testear
