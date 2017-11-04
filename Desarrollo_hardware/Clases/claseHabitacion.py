@@ -3,7 +3,7 @@ import moduloLuces
 from threading import Thread
 
 
-class habitacion(Thread):
+class claseHabitacion(Thread):
 
     def __init__(self, nombreHabitacion):
  		Thread.__init__(self)

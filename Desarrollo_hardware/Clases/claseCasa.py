@@ -1,7 +1,4 @@
-import moduloCortinas
-import moduloLuces
-import habitacion
-from threading import Thread
+import claseHabitacion
 
 class casa(object):
 
@@ -10,7 +7,10 @@ class casa(object):
 
  	def addRoom(self, nombre)
  	# 'nombre' corresponde al nombre o numeracion designada a la habitacion (arbitrario)
- 		self.habitaciones.append(habitacion(nombre))
+ 		self.habitacion = claseHabitacion(nombre)
+ 		self.habitacion.start()
+ 		self.habitacion.join()
+ 		self.habitaciones.append(self.habitacion)
 
  	def showRooms(self)
  		for i in self.habitaciones
@@ -18,10 +18,12 @@ class casa(object):
 
  	def showModulesInRooms(self)
  		for i in self.habitaciones
- 			if i.cortinas!=None :
- 				x = 'Cortinas  '
+ 			if i.cortinas!=None && i.luces!=None :
+ 				x = 'Cortinas/Luces'
+ 			elif i.cortinas!=None :
+ 				x = 'Cortinas'
  			elif i.luces!=None :
- 				x = x + 'Luces'
+ 				x += 'Luces'
  			else
  				x = 'Vacia'
  			print (i.nombre + ' ' + x)
