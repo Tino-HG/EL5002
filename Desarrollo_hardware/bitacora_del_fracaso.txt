@@ -1,17 +1,17 @@
 Esto es una bitacora.
 
+================= ESP
 Se utiliza un ESP12 en el formato de placa nodeMCU.
-=================
-intento 1:
+-intento 1:
 tutorial 1: http://osoyoo.com/2016/11/24/use-nodemcu-to-send-temperaturehumidity-data-to-mqtt-iot-broker/
 Instalar el board manager: http://osoyoo.com/2016/10/25/how-to-use-arduino-ide-to-program-esp8266-wifi-module/
 Instalar libreria de MQTT: http://osoyoo.com/wp-content/uploads/samplecode/pubsubclient.zip
 -> usar la placa NODEMCU ESP12 (no el ESP12E)
 Ajustar el ssdi y el pass a tu conexion WIFI.
 ->broker.mqtt-dashboard.com parece ser una pagina destinada a mandar mensajes como mono nomas? porque la conexion funciona...
--- hasta aca funciona el ESP con esta libreria, ahora pasamos a la parte del server.
 
-=================
-Con RPI
+hasta aca funciona el ESP con esta libreria, ahora pasamos a la parte del server.
+
+================= RPI
 La raspberry pi utilizada en este documento es una PI 3. La estoy usando con SERIAL y putty... dudo mucho que eso haga una diferencia a usarla con hdmi y teclado.
 Asumo que Debian esta instalado.
