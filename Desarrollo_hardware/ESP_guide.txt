@@ -1,2 +1,3 @@
 Se utiliza un ESP12 en el formato de placa nodeMCU.
+tutorial 1: http://osoyoo.com/2016/11/24/use-nodemcu-to-send-temperaturehumidity-data-to-mqtt-iot-broker/
 Instalar el board manager: http://osoyoo.com/2016/10/25/how-to-use-arduino-ide-to-program-esp8266-wifi-module/
