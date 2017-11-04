@@ -9,3 +9,9 @@ Instalar libreria de MQTT: http://osoyoo.com/wp-content/uploads/samplecode/pubsu
 -> usar la placa NODEMCU ESP12 (no el ESP12E)
 Ajustar el ssdi y el pass a tu conexion WIFI.
 ->broker.mqtt-dashboard.com parece ser una pagina destinada a mandar mensajes como mono nomas? porque la conexion funciona...
+-- hasta aca funciona el ESP con esta libreria, ahora pasamos a la parte del server.
+
+=================
+Con RPI
+La raspberry pi utilizada en este documento es una PI 3. La estoy usando con SERIAL y putty... dudo mucho que eso haga una diferencia a usarla con hdmi y teclado.
+Asumo que Debian esta instalado.
