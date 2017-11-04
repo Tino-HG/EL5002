@@ -2,22 +2,34 @@ import claseHabitacion
 
 class casa(object):
 
-    def __init__(self):
+    def __init__(self) :
  		self.habitaciones = []
 
- 	def addRoom(self, nombre)
+ 	def addRoom(self, nombre) :
  	# 'nombre' corresponde al nombre o numeracion designada a la habitacion (arbitrario)
- 		self.habitacion = claseHabitacion(nombre)
- 		self.habitacion.start()
- 		self.habitacion.join()
- 		self.habitaciones.append(self.habitacion)
+ 		for room in self.habitaciones :
+ 			if nombre == room.nombre :
+ 				print ('Esta habitacion ya existe, intente con otro nombre\n')
+ 				return
+ 		habitacion = claseHabitacion(nombre)
+ 		habitacion.start()
+ 		habitacion.join()
+ 		self.habitaciones.append(nombre)
 
- 	def showRooms(self)
- 		for i in self.habitaciones
+ 	def addModule(self,habitacion,modulo) :
+ 		for room in self.habitaciones :
+ 			if habitacion == room.nombre :
+ 				room.addModules(modulo)
+ 				return
+ 		print ('Esta habitacion no existe.')
+
+
+ 	def showRooms(self) :
+ 		for i in self.habitaciones :
  			print (i.nombre)
 
- 	def showModulesInRooms(self)
- 		for i in self.habitaciones
+ 	def showModulesInRooms(self) :
+ 		for i in self.habitaciones :
  			if i.cortinas!=None && i.luces!=None :
  				x = 'Cortinas/Luces'
  			elif i.cortinas!=None :
@@ -26,4 +38,4 @@ class casa(object):
  				x += 'Luces'
  			else
  				x = 'Vacia'
- 			print (i.nombre + ' ' + x)
+ 			print (i.nombre + ' ' + x + '\n')
