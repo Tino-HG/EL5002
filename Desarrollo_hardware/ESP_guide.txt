@@ -1,0 +1,1 @@
+Se utiliza un ESP12 en el formato de placa nodeMCU.
