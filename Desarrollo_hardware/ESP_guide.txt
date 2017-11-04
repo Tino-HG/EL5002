@@ -6,3 +6,6 @@ intento 1:
 tutorial 1: http://osoyoo.com/2016/11/24/use-nodemcu-to-send-temperaturehumidity-data-to-mqtt-iot-broker/
 Instalar el board manager: http://osoyoo.com/2016/10/25/how-to-use-arduino-ide-to-program-esp8266-wifi-module/
 Instalar libreria de MQTT: http://osoyoo.com/wp-content/uploads/samplecode/pubsubclient.zip
+-> usar la placa NODEMCU ESP12 (no el ESP12E)
+Ajustar el ssdi y el pass a tu conexion WIFI.
+->broker.mqtt-dashboard.com parece ser una pagina destinada a mandar mensajes como mono nomas? porque la conexion funciona...
