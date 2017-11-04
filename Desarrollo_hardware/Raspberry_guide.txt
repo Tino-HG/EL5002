@@ -1,2 +1,1 @@
-Este archivo funciona como una bitacora para la configuración inicial de la RPI, esto para lograr dejarla en su estado funcional para el protocolo MQTT.
-La raspberry pi utilizada en este documento es una PI 3.
+
