@@ -1,13 +1,7 @@
+from claseModulo import Modulo
 
-class Cortinas(object) :
+class Cortinas(Modulo) :
 
 	def __init__(self):
-		self.sensor = None
-		self.actuadores = []
-
-	def addSensor(self,ID):
-		return
-
-	def addActuator(self,ID):
-		return
-		
+		Modulo.__init__(self)
+	

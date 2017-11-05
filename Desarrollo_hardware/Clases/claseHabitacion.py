@@ -28,8 +28,7 @@ class Habitacion(Thread):
 			print ('%s: Error en tipo de modulo en habitacion. Ingresar Cortinas o Luces' % self.nombre)
 
 	def run(self):
-   		#Activo ambos modulos(?)
-   		#cortinas.activate
-   		#luces.activate
+   		self.cortinas.activate()
+   		self.luces.activate()
    		return
     	
