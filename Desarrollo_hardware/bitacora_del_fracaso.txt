@@ -29,3 +29,9 @@ sudo apt-get install mosquitto
 http://www.instructables.com/id/Installing-MQTT-BrokerMosquitto-on-Raspberry-Pi/
 sudo apt-get install mosquitto-clients
 -> testear
+-intento 2:
+Mosquito no apaña con python... asi que hay que buscar libreria para mqtt en python
+https://www.baldengineer.com/mqtt-tutorial.html
+pip install paho-mqtt
+"By default, mosquitto runs on port 1883 with virtually no security"
+https://stackoverflow.com/questions/30207649/address-already-in-use-error-in-mosquitto
