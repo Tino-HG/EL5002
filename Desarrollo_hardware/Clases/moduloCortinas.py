@@ -1,5 +1,5 @@
 
-class moduloCortinas(self):
+class Cortinas(object) :
 
 	def __init__(self):
 		self.sensor = None

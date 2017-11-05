@@ -1,5 +1,5 @@
 
-class moduloLuces(self):
+class Luces(object) :
 
 	def __init__(self):
 		self.sensor = None
