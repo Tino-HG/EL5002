@@ -1,10 +1,22 @@
-import claseHabitacion
+import Habitacion
 
-class Casa(object) :
+class claseCasa(object) :
 
 	def __init__(self) :
 		print ('Entorno CASA inicializado')
 		self.habitaciones=[]
+
+	def activate(self) :
+		for room in self.habitaciones :
+			room.start()
+			if room.isAlive() :
+				print ('%s: Modulos en inicializados y en ejecucion' % room.nombre)
+
+	def debug(self) :
+		for room in self.habitaciones :
+			if room.isAlive() :
+				print ('%s: isAlive' % room.nombre)
+
 
 	def addRoom(self, nombre) :
 	# 'nombre' corresponde al nombre o numeracion designada a la habitacion (arbitrario)
@@ -12,9 +24,7 @@ class Casa(object) :
 			if nombre == room.nombre :
 				print ('%s: Esta habitacion ya existe, intente con otro nombre' % nombre)
 				return
-		habitacion = claseHabitacion.Habitacion(nombre)
-		habitacion.start()
-		habitacion.join()
+		habitacion = Habitacion.claseHabitacion(nombre)
 		self.habitaciones.append(habitacion)
 		print ('Habitacion %s agregada con exito.' % nombre)
 
