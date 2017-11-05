@@ -35,3 +35,7 @@ https://www.baldengineer.com/mqtt-tutorial.html
 pip install paho-mqtt
 "By default, mosquitto runs on port 1883 with virtually no security"
 https://stackoverflow.com/questions/30207649/address-already-in-use-error-in-mosquitto
+*** comprar Adafruit TB6612 1.2A DC/Stepper Motor Driver Board ? ***
+
+================== ESP
+volviendo al esp... motor: http://kookye.com/2016/12/13/use-nodemcu-to-control-step-motor-through-mqtt-iot-protocol/
